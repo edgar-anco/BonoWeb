@@ -57,6 +57,8 @@ const bondSchema = mongoose.Schema({
         type: Number,
         default: 0.00500
     },
+    creator: String,
+    name: String,
 });
 
 const BondMessage = mongoose.model('BondMessage', bondSchema);
